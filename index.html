@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1 class="title">Tip Calculator</h1>
+      </header>
+      <section class="calculator-div">
+        <div class="bill">
+          <div class="bill-info">
+            <label for="bill" class="bill-lbl">Bill</label> <span>$</span>
+          </div>
+          <div class="bill-data">
+            <input type="number" id="bill" class="bill" />
+          </div>
+        </div>
+        <div class="tip">
+          <div class="tip-info">
+            <label class="tip-lbl" for="tip">Tip</label>
+            <span>%</span>
+          </div>
+          <div class="tip-data">
+            <input type="range" min="1" max="50" id="tip-value" value="15" />
+            <span class="tip-span">0</span>
+          </div>
+        </div>
+        <div class="people">
+          <div class="people-info">
+            <label for="people" class="people-lbl">People </label>
+          </div>
+          <div class="person-data">
+            <input type="range" min="1" max="10" id="people" value="2" />
+            <span class="people-span">0</span>
+          </div>
+        </div>
+        <div class="div-results">
+          <div class="results">
+            <p>Tip per person</p>
+            <span class="tip-per-person">0</span>
+          </div>
+          <div class="results">
+            <p>Total per person</p>
+            <span class="total-per-person">0</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
