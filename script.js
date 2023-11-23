@@ -3,7 +3,7 @@
 const input = document.getElementById("bill");
 const sliders = document.querySelectorAll("input[type='range']");
 
-sliders.forEach(function (slider) {
+sliders.forEach((slider) => {
   slider.addEventListener("input", calcTip);
 });
 
